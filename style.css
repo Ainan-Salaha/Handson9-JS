@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    border: 3px solid;
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: rgb(201, 242, 242);
+
+}
+
+div pre{
+    color: red;
+    font-size: large;
+}
+
+div h1 {
+    color: blue;
+}
+
+span h1{
+    text-align: center;
+    color: rgb(78, 9, 143);
+
+}

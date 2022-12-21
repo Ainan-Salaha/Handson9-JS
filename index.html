@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson9-JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <span><h1>Maps and Sets</h1></span>
+    <div class="main">
+    <h1>1.Problem:
+        <br>You are given a string (STR) of length N, consisting of only the lower case English alphabet.
+        <br>Your task is to remove all the duplicate occurrences of characters in the string.
+
+        Input:
+        abcadeecfb
+    </h1>
+    <h2>Ans</h2>
+    <pre>
+                function aLp(){
+                    let STR=['a','b','c','a','d','e','e','c','f','b'];
+                    let s=new Set();
+                    for(let i=0;i< STR.length;i++){
+                        s.add(STR[i]);
+                    }
+                    console.log(s);
+                }
+                aLp();
+            </pre>
+    <h3>Output:
+        <br>"abcdef"
+    </h3>
+</div>
+
+<div class="main">
+    <h1>2."Problem:
+        <br>You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps)
+
+        <br>Input:
+        <br>abcadeecfb
+
+    </h1>
+    <h2>Ans</h2>
+    <pre>
+            function mAp()
+            {
+                let s="abcadeecfb";
+                let map=new Map();
+                    for (let i=0; i< s.length;i++){
+                        if(map.has(s[i])){
+                            let value=map.get(s[i]);
+                            map.set(s[i],value+1);
+                        }
+                        else{
+                            map.set(s[i],1);
+                         }
+               
+                    }
+                    for(let [k,v] of map){
+                    console.log(k +"-->"+v)
+            }
+        
+        }
+        mAp();</pre>
+
+    <h3>Output:
+        <br>a=2
+        <br>b=2
+        <br>c=2
+        <br>d=1
+        <br>e=2
+        <br>f=1"
+    </h3>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
